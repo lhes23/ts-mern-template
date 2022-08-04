@@ -28,6 +28,8 @@ export const port: string | number = process.env.PORT || 4000;
 app.listen(port, () => console.log(`Server running on port: ${port}`));
 
 // npm init -y
+// mkdir src
+// touch src/app.ts
 // npm i express dotenv cors mongoose http-errors
 // npm i -D typescript ts-node nodemon @types/express @types/cors @types/mongoose @types/node @types/http-errors
 // npx tsc --init
