@@ -31,6 +31,22 @@ npm i -D typescript ts-node nodemon @types/express @types/cors @types/mongoose @
 
 npx tsc --init
 
+<!-- Add dev and start script -->
+In package.json  
+"scripts": {  
+    "test": "echo \"Error: no test specified\" && exit 1",  
+    "dev": "nodemon ./src/app.ts",  
+    "start": "npx tsc && node ./dist/app.js"  
+  },  
+  
+<!-- Edit the tscofig -->
+In tsconfig.json. 
+"module": "commonjs"  
+"rootDir": "./src"  
+"moduleResolution": "node"  
+"outDir": "./dist"  
+"include": ["./src"]  
+
 <!-- Create directory for the Model, Controller and Routes Folder -->
 
 mkdir src/models
